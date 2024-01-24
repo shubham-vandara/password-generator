@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Shubham Vandara</title>
+    <link rel="icon" href="https://i.ibb.co/mBqpwhV/sv-circle-logo.png">
+    <link
+        href="https //fonts.googleapis.com/css?family=Open+Sans 300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="inputBox">
+            <input type="text" id="passwordBox" disabled>
+            <span id="copy-icon" class="material-symbols-outlined">
+                content_copy
+            </span>
+        </div>
+
+        <input id="inputSlider" type="range" min="1" max="20" value="7" step="1">
+
+        <div class="passwordLength">
+            <p>Password Length </p>
+            <span id="sliderValue"></span>
+        </div>
+
+        <div class="passwordLength">
+            <label for="lowercase">Include Lowercase Letters (a-z) </label>
+            <input type="checkbox" checked name="lowercase" id="lowercase">
+        </div>
+
+        <div class="passwordLength">
+            <label for="uppercase">Include Uppercase Letters (A-Z) </label>
+            <input type="checkbox" checked name="uppercase" id="uppercase">
+        </div>
+
+        <div class="passwordLength">
+            <label for="numbers">Include Numbers (0-9) </label>
+            <input type="checkbox" checked name="numbers" id="numbers">
+        </div>
+
+        <div class="passwordLength">
+            <label for="symbols">Include Symbols (!@#$%&) </label>
+            <input type="checkbox" checked name="symbols" id="symbols">
+        </div>
+
+        <button id="button" type="button" class="button">Genrate Button</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
