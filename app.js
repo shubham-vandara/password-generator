@@ -10,12 +10,18 @@ let copyIcon = document.querySelector("#copy-icon");
 
 sliderValue.textContent = inputSlider.value;
 
+// for password range event
 inputSlider.addEventListener("input", () => {
   sliderValue.textContent = inputSlider.value;
 });
 
+// generate button event
 genrateButton.addEventListener("click", () => {
   passwordBox.value = genratePassword();
+  // when input box have value then copy icon show other wise don't show
+  if (passwordBox.value) {
+    copyIcon.classList.add("copy-icon-display");
+  }
 });
 
 let lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -23,8 +29,7 @@ let upperCase = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
 let allNumbers = "0123456789";
 let allSymbols = "!@#$%&";
 
-// Function to genrate password
-
+// generate password function
 function genratePassword() {
   let genPassword = "";
   let allChars = "";
@@ -40,6 +45,7 @@ function genratePassword() {
   return genPassword;
 }
 
+// copy icon event
 copyIcon.addEventListener("click", () => {
   if (passwordBox.value) {
     navigator.clipboard.writeText(passwordBox.value);
@@ -47,7 +53,7 @@ copyIcon.addEventListener("click", () => {
     copyIcon.title = "Password Copied";
 
     setTimeout(() => {
-        copyIcon.innerText = "content_copy" 
+      copyIcon.innerText = "content_copy";
     }, 2000);
   }
 });
