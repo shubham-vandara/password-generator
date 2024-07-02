@@ -15,7 +15,7 @@ To start using the Website Password Generator, follow these steps:
 
 ### View the Website
 
-Visit the Website Password Generator hosted on GitHub Pages by following this link: [Password Generator Demo](https://github.com/shubham-vandara/password-generator.git). This allows you to experience the password generator's features and layout directly in your browser. Feel free to generate passwords, adjust settings, and copy passwords to your clipboard.
+Visit the Website Password Generator hosted on GitHub Pages by following this link: [Password Generator Demo](https://shubham-vandara.github.io/password-generator/). This allows you to experience the password generator's features and layout directly in your browser. Feel free to generate passwords, adjust settings, and copy passwords to your clipboard.
 
 ## Contact
 
